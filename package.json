@@ -1,6 +1,7 @@
 {
   "name": "regress-engine",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "clean": "if exist dist rmdir /Q /S dist",
     "build1": "npm run clean && tsc",

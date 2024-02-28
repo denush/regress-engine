@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    // "target": ""
+    "strict": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    // "esModuleInterop": true,
+    // "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "outDir": "./dist",
+    // "declarationDir": "./dist",
+
+    "strictNullChecks": true,
+    "noImplicitAny": true
+  },
+  "include": ["./src"]
+}

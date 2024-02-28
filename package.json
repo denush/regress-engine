@@ -1,0 +1,25 @@
+{
+  "name": "regress-engine",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "if exist dist rmdir /Q /S dist",
+    "build1": "npm run clean && tsc",
+    "build": "npm run clean && webpack --config ./webpack.config.prod.js",
+    "demo": "webpack serve --config ./webpack.config.dev.js"
+  },
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "files": [
+    "./dist/**/*",
+    "./package.json",
+    "./webpack.config.js",
+    "./README.md"
+  ],
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2"
+  }
+}

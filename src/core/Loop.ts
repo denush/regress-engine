@@ -1,7 +1,7 @@
 type LoopCallback = () => void;
 
 export default class Loop {
-  private _callback: LoopCallback | null = null;
+  private _callback?: LoopCallback;
   private _wrapper = () => {
     requestAnimationFrame(this._wrapper);
 
